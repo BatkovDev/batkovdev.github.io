@@ -48,7 +48,7 @@ var start = function () {
 	$(".end").hide();
 }
 
-if (distance < 15 && GAME_STATE == 1 && GAME_STATE !== 2) {
+if (distance < 19 && GAME_STATE == 1 && GAME_STATE !== 2) {
 	win();
 }
 var width = 300;
@@ -75,17 +75,17 @@ var getDistanceHint = function (distance) {
 	if(clicks >= 30)
 		sadist =" (Кликов до клада: "+ Math.round(distance) +")";
 
-	if (distance < 20) {
+	if (distance < 29) {
 	return "Обожжешься!";
-	} else if (distance < 40) {
+	} else if (distance < 49) {
 	return "Очень горячо"+sadist;
-	} else if (distance < 80) {
+	} else if (distance < 90) {
 	return "Горячо"+sadist;
-	} else if (distance < 140) {
+	} else if (distance < 150) {
 	return "Тепло"+sadist;
-	} else if (distance < 210) {
+	} else if (distance < 229) {
 	return "Холодно"+sadist;
-	} else if (distance < 260) {
+	} else if (distance < 280) {
 	return "Очень холодно"+sadist;
 	} else {
 	return "Замерзнешь!"+sadist;
