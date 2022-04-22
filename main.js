@@ -48,7 +48,7 @@ var start = function () {
 	$(".end").hide();
 }
 
-if (distance < 19 && GAME_STATE == 1 && GAME_STATE !== 2) {
+if (distance < 40 && GAME_STATE == 1 && GAME_STATE !== 2) {
 	win();
 }
 var width = 300;
